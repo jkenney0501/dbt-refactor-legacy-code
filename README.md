@@ -26,7 +26,7 @@ When migrating and refactoring code, it’s of course important to stay organize
     - marts: Typically used for business intelligence report creation which can combine facts and dimesions to create a large report. These are downstream and get queried alot. They are best materializwed as tables.
     - **Read more on transformations** [here.](https://www.getdbt.com/analytics-engineering/transformation)
 6. Audit the output of dbt models vs legacy SQL
-    - Use a package with its macros to ensure consistency with legact code results.
+    - Use a package with its macros to ensure consistency with legacy code results.
     - Audit helper is a good one for this. It can be found [here.](https://hub.getdbt.com/dbt-labs/audit_helper/latest/)
 
 
