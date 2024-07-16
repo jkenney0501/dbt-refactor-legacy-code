@@ -3,7 +3,7 @@
 When migrating and refactoring code, it’s of course important to stay organized. We'll do this by following several steps:
 
 1. Migrate your code 1:1 into dbt
-    - This step is simple, create a "legacy" folder and then create a file WITH a suitable name for the legcy code.
+    - This step is simple, create a "legacy" folder and then create a file with a suitable name for the legcy code.
 
 2. Implement dbt sources rather than referencing raw database tables
     - Use the source function which helps connect to DWH sources & set up models to be referenced downstream.
