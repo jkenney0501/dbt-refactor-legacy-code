@@ -1,4 +1,4 @@
-## Refactoring Legacy Code WITH dbt
+## Refactoring Legacy Code with dbt
 
 When migrating and refactoring code, it’s of course important to stay organized. We'll do this by following several steps:
 
