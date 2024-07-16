@@ -3,13 +3,13 @@
 When migrating and refactoring code, it’s of course important to stay organized. We'll do this by following several steps:
 
 1. Migrate your code 1:1 into dbt
-    - This step is simple, create a "legacy" folder and then create a file WITH a suitable name for the leagcy code.
+    - This step is simple, create a "legacy" folder and then create a file WITH a suitable name for the legcy code.
 
-2. Implement dbt sources rather than referencing raw databASe tables
+2. Implement dbt sources rather than referencing raw database tables
     - Use the source function which helps connect to DWH sources & set up models to be referenced downstream.
 
 3. Choose a refactoring strategy:
-    - Two methods can be considered realistically: in place and along side refacting.
+    - Two methods can be considered realistically: in place and along side refactoring.
     - Both have pros and cons. To read more about the [read here.](https://docs.getdbt.com/guides/refactoring-legacy-sql?step=4)
 
 4. Implement CTE groupings and cosmetic cleanup
@@ -23,7 +23,7 @@ When migrating and refactoring code, it’s of course important to stay organize
     - int: where you transformations take place, this is typically where I build DIM's or FCT's.
     - dim: folder for dimensaion models that add context to facts.
     - fct: this is where your fact tables live. All live events that have occured and are meASured.
-    - marts: Typically used for business intelligence report creation whihc can combine facts and dimesions to create a large report. These are downstream and get queried alot. Thye are best materializwed AS tables.
+    - marts: Typically used for business intelligence report creation which can combine facts and dimesions to create a large report. These are downstream and get queried alot. They are best materializwed as tables.
     - **Read more on transformations** [here.](https://www.getdbt.com/analytics-engineering/transformation)
 6. Audit the output of dbt models vs legacy SQL
     - Use a package with its macros to ensure consistency with legact code results.
